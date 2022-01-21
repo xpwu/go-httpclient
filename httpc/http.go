@@ -188,15 +188,16 @@ func Send(ctx context.Context, url string, options ...Option) (err error) {
     }
   }
 
-  id := opt.header.Get(reqid.HeaderKey)
-  if id == "" {
-    ctx, id = reqid.WithCtx(ctx)
-    opt.header.Set(reqid.HeaderKey, id)
+  rid := opt.header.Get(reqid.HeaderKey)
+  if rid == "" {
+    // 新生成一个id，默认情况下不使用ctx里面的reqid，如果需要ctx里面的reqid，上层可以通过reqid.HeaderKey头信息设置
+    rid = reqid.RandomID()
+    opt.header.Set(reqid.HeaderKey, rid)
   }
 
   ctx, logger := log.WithCtx(ctx)
 
-  logPrefix := fmt.Sprintf("send reqid:%s to url(%s). ", id, url)
+  logPrefix := fmt.Sprintf("send reqid:%s to url(%s). ", rid, url)
   logger.PushPrefix(logPrefix)
   defer logger.PopPrefix()
 
