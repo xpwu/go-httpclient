@@ -12,7 +12,10 @@ github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5
 github.com/xpwu/go-cmd v0.0.0-20220120085450-0e19f81d7237 h1:hTJH8tKzC0JIzNacNCwKVzkBa/+LFq7xhXfGXpU/w+c=
 github.com/xpwu/go-cmd v0.0.0-20220120085450-0e19f81d7237/go.mod h1:hlID1UUINRJXJSSf1nAsPfLJbSNafd82ouYs0gxvsgM=
 github.com/xpwu/go-config v0.0.0-20220120022145-665ba74379f3/go.mod h1:WcIGlQK06FsHcu0NeuQ7bB8bZFkeVvPGwrcKI2aMaFc=
+github.com/xpwu/go-config v0.0.0-20220121153622-7b6f40653b1b/go.mod h1:WcIGlQK06FsHcu0NeuQ7bB8bZFkeVvPGwrcKI2aMaFc=
 github.com/xpwu/go-log v0.0.0-20220120022843-2cbc01400de4/go.mod h1:qulI7g0Yyd0Wr5RbH5cVEZiGhJISJVgGjwy6HnQaEms=
+github.com/xpwu/go-log v0.0.0-20220121154757-1a8eef3685db h1:RYQSooe01Ki1JfeNDAB5R8jNR2LRaO0zmZocod8SiOM=
+github.com/xpwu/go-log v0.0.0-20220121154757-1a8eef3685db/go.mod h1:thZXl+ouliDHmuZ8KLz7pAnFu9errw27Vamhv1jA5xE=
 github.com/xpwu/go-pipe v0.0.0-20220115063006-dac336d40ac5/go.mod h1:apP02ck3B5eCKc19TTQh+to4iTyeCe8aU8isMv7IuCs=
 github.com/xpwu/go-reqid v0.0.0-20220121092940-0d390bc2f5a5 h1:YRQqOuzuLahnPPyF3vbwhW8zpr884PsCmhgUvTXmVgc=
 github.com/xpwu/go-reqid v0.0.0-20220121092940-0d390bc2f5a5/go.mod h1:VG6DraZK8fsAMskvr95aCYppalDEcKO4NnyNz6W8vO4=
