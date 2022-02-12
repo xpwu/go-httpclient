@@ -7,15 +7,15 @@ import (
 
 type RawURL string
 
-func (r *RawURL) String() (l string, err error) {
-  u,err := url.Parse(string(*r))
+func (r RawURL) String() string {
+  u,err := url.Parse(string(r))
   if err != nil {
-    return "", err
+    return string(r)
   }
   u.Path = path.Clean(u.Path)
   if u.Scheme == "" {
     u.Scheme = "http"
   }
 
-  return u.String(), nil
+  return u.String()
 }
