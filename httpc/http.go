@@ -178,6 +178,7 @@ func Send(ctx context.Context, url string, options ...Option) (err error) {
 			if response.StatusCode != http.StatusOK {
 				return errors.New(response.Status)
 			}
+			_ = response.Body.Close()
 			return nil
 		},
 		method: http.MethodGet,
